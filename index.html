@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{
+        display: flex;
+        background-color: teal;
+        width: 400px;
+        height: 400px;
+        gap: 40px;
+        padding: 20px;
+        text-align: center;
+        border-style: solid;
+        border-radius: 40px;
+        box-shadow: black 1px 1px 10px;
+        margin-left: 50px
+        
+       }
+       .container > div {
+        background-color: tan;
+        height:15px;
+        width: 70px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 2px 2px 30px;
+        cursor: pointer;
+        
+       }
+       .item1:hover{
+        background-color: rgb(107, 130, 148);
+        color: white;
+       
+       }
+       .item2:hover{
+        background-color: rgb(107, 130, 148);
+        color: white;
+       
+       }
+       .item3:hover{
+        background-color: rgb(107, 130, 148);
+        color: white;
+       
+       }
+       .item4:hover{
+        background-color: rgb(107, 130, 148);
+        color: white;
+       
+       }
+       img{
+        width: 150px;
+        height: 150px;
+        position: fixed;
+        bottom: 270px;
+        left: 200px;
+        box-shadow: 5px 5px 30px;
+        border-radius: 90px;
+       }
+       .container>.item1:hover~img{
+        
+        background-color: rgb(222, 227, 227);
+        transform: translate(80px,80px);
+        transition: all 2s;
+        
+       }
+       .container>.item2:hover~img{
+        
+        background-color: rgb(222, 227, 227);
+        transform: rotate(1000deg);
+        transition: all 5s;
+        
+       }
+       .container>.item3:hover~img{
+        
+        background-color: rgb(222, 227, 227);
+        transform: scale(3,3);
+        transition: all 2s;
+        
+       }
+       .container>.item4:hover~img{
+        
+        background-color: rgb(222, 227, 227);
+        transform: skew(200deg, 30deg);
+        transition: all 4s;
+        
+       }
+       
+       
+       
+       
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">Translate</div>
+        <div class="item2">Rotate</div>
+        <div class="item3">Scale</div>
+        <div class="item4">Skew</div>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA4tG2sbg_UfD9pOXAeXSKikm4biZJ5ELF5A&s" alt="">
+    </div>
+</body>
+</html>
